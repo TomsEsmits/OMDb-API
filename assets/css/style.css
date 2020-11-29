@@ -1,0 +1,112 @@
+body {
+	background: url('../img/wave.svg') no-repeat center / cover;
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		height: 100vh;
+	}
+}
+
+.main form {
+	max-width: 440px;
+	width: 100%;
+	padding-top: 150px;
+}
+
+@media only screen and (max-width: 767px) {
+	.main form {
+		padding-top: 30px;
+	}	
+}
+.form-group .form-control {
+	height: 50px;
+}
+
+.form-group .btn {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.movies-section .card {
+	background: #343a40;
+	height: 480px;
+	max-width: 320px;
+	width: 100%;
+	padding: 15px;
+	display: flex;
+  justify-content: space-around;
+  border: none;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.movies-section .card h5 {
+	color: #fff;
+}
+
+.movies-section .card h5:after {
+	content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: auto;
+  background: #fff;
+  margin-top: 10px;
+}
+
+.movies-section .card img {
+	height: 320px;
+  object-fit: cover;
+}
+
+.movies-section .card {
+	text-align: center;
+}
+
+.movies-section .movie-heading {
+	color: #fff;
+  text-align: center;
+  font-size: 65px;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+
+.movies-section .movie-heading:after {
+	content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: auto;
+  background: #fff;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+	.generator-heading {
+		font-size: 26px;
+	}
+}
+
+.movies-section .single-movie-img {
+	height: 370px;
+}
+
+.movies-section .movie-info-list {
+	list-style: none;
+	padding: 20px;
+  background: #00000066;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.movies-section .movie-info-list .list-item {
+	color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.movies-section .movie-info-list .list-item span {
+	font-size: 20px;
+  font-weight: bold;
+}
