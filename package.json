@@ -1,0 +1,23 @@
+{
+  "name": "omdb",
+  "version": "1.0.0",
+  "description": "OMDb API",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomsEsmits/OMDb-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomsEsmits/OMDb-API/issues"
+  },
+  "homepage": "https://github.com/TomsEsmits/OMDb-API#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
