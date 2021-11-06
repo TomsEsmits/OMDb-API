@@ -61,9 +61,6 @@ body {
     background: #fff;
     margin-top: 10px; }
 
-.movies-section .single-movie-img {
-  height: 370px; }
-
 .movies-section .movie-info-list {
   list-style: none;
   padding: 20px;
