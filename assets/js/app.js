@@ -1,9 +1,11 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../sass/main.scss";
+
 const getMovieBtn = document.querySelector('#get-movie');
 
 if(getMovieBtn) {
   getMovieBtn.addEventListener("click", async (e) => {
     e.preventDefault();
-  
     const title = document.querySelector('input[type="text"]').value;
   
     await fetch(`https://omdbapi.com/?s=${title}&apikey=f1196e81&plot=full&page=`)
@@ -17,19 +19,24 @@ if(getMovieBtn) {
             <div class="card shadow-lg">
               <img src="${movie.Poster}">
               <h5>${movie.Title}</h5>
-              <button onclick="movieInfo('${movie.imdbID}')" class="btn btn-lg btn-block btn-outline-light" title="Movie Info">Movie Info</button>
+              <a href="#" movieid="${movie.imdbID}" class="btn btn-lg btn-block btn-outline-light" title="Movie Info">Movie Info</a>
             </div>
           </div>`;
         });
       }
-  
+
       document.querySelector('#movies').innerHTML = movieTemplate;
     })
     .catch(error => {
       console.log("Error(something whent wrong)", error);
     });
+
+    document.querySelectorAll("a[movieid]")
+    .forEach(element => element.addEventListener("click", () => movieInfo(element.getAttribute("movieid"))));
   });
-}  
+} else {
+  getSingleMovie();
+}
 
 function movieInfo(id) {
   sessionStorage.setItem('Movie ID', id);

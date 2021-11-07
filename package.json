@@ -1,23 +1,32 @@
 {
-  "name": "omdb",
+  "name": "omdb-api",
   "version": "1.0.0",
-  "description": "OMDb API",
-  "main": "gulpfile.js",
+  "description": "OMDb API project",
+  "main": "app.js",
   "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TomsEsmits/OMDb-API.git"
   },
-  "author": "",
+  "author": "Toms Esmits",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TomsEsmits/OMDb-API/issues"
   },
   "homepage": "https://github.com/TomsEsmits/OMDb-API#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "css-loader": "^6.5.1",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "node-sass": "^5.0.0",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
